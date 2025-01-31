@@ -12,8 +12,8 @@ const Navbar = () => {
                 <img src={Logo} alt="logo" className="w-16 h-16" />
 
                 {/* MENÚ - Oculto en pantallas pequeñas */}
-                <ul className="hidden md:flex  px-32 space-x-16 text-lg font-normal">
-                    <li><a href="#home" className="hover:text-white">Home</a></li>
+                <ul className="hidden md:flex  px-32 space-x-16 text-lg font-semibold">
+                    <li><a href="/" className="hover:text-white">Home</a></li>
                     <li><a href="#productos" className="hover:text-white">Productos</a></li>
                     <li><a href="#conocenos" className="hover:text-white">Conócenos</a></li>
                     <li><a href="#contacto" className="hover:text-white">Contacto</a></li>
