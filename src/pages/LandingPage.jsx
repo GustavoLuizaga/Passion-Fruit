@@ -23,13 +23,15 @@ const LandingPage = () => {
                     </div>
 
                     {/* Contenedor de la Imagen */}
-                    <div className="mt-10 md:mt-0 md:ml-5 md:py-0 flex-shrink-0">
-                        <img 
+                    <div className="mt-10 md:mt-0 md:ml-5 md:py-0 flex-shrink-0 rounded-lg overflow-hidden w-full md:w-[800px] h-auto">
+                        <img
                             src={Mango}
-                            alt="Jugo de Mango" 
-                            className="w-[800px] h-[500px] object-cover rounded-lg shadow-lg"
+                            alt="Jugo de Mango"
+                            className="w-full h-full object-cover rounded-lg"
                         />
                     </div>
+
+
                 </div>
             </div>
             <Footer />
