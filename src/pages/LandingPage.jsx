@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Mango from "../assets/Mango.jpg";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
     return (
@@ -17,11 +18,11 @@ const LandingPage = () => {
                         <p className="text-left mt-10 text-[20px]">
                             Jugos Naturales y refrescantes, el auténtico sabor tropical en cada sorbo. Nuestros jugos están hechos con mangos frescos y 100% naturales, perfectos para revitalizar tu día.
                         </p>
-                        <a href="/products">
+                        <Link to ="/products">
                             <button className="w-full bg-[#FEBD01] p-4 rounded-xl text-[16px] text-black font-semibold mt-8 cursor-pointer" >
                                 Ver Productos
                             </button>
-                        </a>
+                        </Link>
 
                     </div>
 
