@@ -12,7 +12,6 @@ const Products = () => {
             <div className="mt-5 md:px-32 flex justify-center mb-15">
             <Card />
             </div>
-            
             <Footer />
             
         </div>
