@@ -9,7 +9,7 @@ export default function Footer() {
         {/* Sección de Marca */}
         <div>
           <h2 className="text-xl font-bold text-white">
-            Elixir <span className="text-[#FF9000]">frutal</span>
+            Elixir <span className="text-[#FEBD01]">frutal</span>
           </h2>
           <p className="text-gray-400 mt-2">
             Descubre el sabor tropical del mango en su máxima expresión.
@@ -22,15 +22,15 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-white md:px-10">Productos</h3>
           <ul className="mt-2 text-gray-400 space-y-2 md:px-10">
-            <li><a href="#">Todos los productos</a></li>
-            <li><a href="#">Jugos naturales</a></li>
+            <li><a href="/products">Todos los productos</a></li>
+            <li><a href="/products">Jugos naturales</a></li>
           </ul>
         </div>
 
         {/* Empresa */}
         <div>
           <h3 className="font-semibold text-white">Redes sociales</h3>
-          <div className="flex gap-4 mt-4 text-[#FF9000] text-2xl">
+          <div className="flex gap-4 mt-4 text-[#FEBD01] text-2xl">
             
             <a href="https://www.facebook.com/profile.php?id=61572239407939&rdid=v3BR8n6YIDvfHJIW#">
             <FaFacebook />
@@ -51,16 +51,16 @@ export default function Footer() {
           <h3 className="font-semibold text-white">Contacto</h3>
           <ul className="mt-2 text-gray-400 space-y-2">
             <li className="flex items-center gap-2">
-              <FaMapMarkerAlt className="text-[#FF9000]" />
+              <FaMapMarkerAlt className="text-[#FEBD01]" />
               Cochabamba, Bolivia
             </li>
             <li className="flex items-center gap-2">
-              <FaPhone className="text-[#FF9000]" />
-              +591 ...
+              <FaPhone className="text-[#FEBD01]" />
+              +591 75408059
             </li>
             <li className="flex items-center gap-2">
-              <FaEnvelope className="text-[#FF9000]" />
-              ....@gmail.com
+              <FaEnvelope className="text-[#FEBD01]" />
+              elixirfrutal@gmail.com
             </li>
           </ul>
         </div>
