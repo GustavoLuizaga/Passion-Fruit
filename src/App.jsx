@@ -1,11 +1,9 @@
 import './App.css';
-import LandingPage from './pages/LandingPage';
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
   return (
-    <>
-      <LandingPage />
-    </>
+      <AppRoutes/>
   );
 }
 

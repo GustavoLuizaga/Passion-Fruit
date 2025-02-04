@@ -22,8 +22,8 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-white md:px-10">Productos</h3>
           <ul className="mt-2 text-gray-400 space-y-2 md:px-10">
-            <li><a href="#">Todos los productos</a></li>
-            <li><a href="#">Jugos naturales</a></li>
+            <li><a href="/products">Todos los productos</a></li>
+            <li><a href="/products">Jugos naturales</a></li>
           </ul>
         </div>
 
@@ -56,11 +56,11 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <FaPhone className="text-[#FEBD01]" />
-              +591 ...
+              +591 75408059
             </li>
             <li className="flex items-center gap-2">
               <FaEnvelope className="text-[#FEBD01]" />
-              ....@gmail.com
+              elixirfrutal@gmail.com
             </li>
           </ul>
         </div>

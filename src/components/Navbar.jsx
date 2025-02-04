@@ -9,14 +9,14 @@ const Navbar = () => {
         <nav className="bg-[#FEBD01] shadow-md p-1.5">
            <div className="max-w-7xl mx-auto flex items-center justify-between md:justify-start px-8 md:ml-[5rem]">
                 {/* LOGO */}
-                <img src={Logo} alt="logo" className="w-16 h-16" />
+                <a href="/">
+                <img src={Logo} alt="logo" className="w-16 h-16" />                
+                </a>
 
                 {/* MENÚ - Oculto en pantallas pequeñas */}
                 <ul className="hidden md:flex  px-32 space-x-16 text-lg font-semibold">
-                    <li><a href="/" className="hover:text-white">Home</a></li>
-                    <li><a href="#productos" className="hover:text-white">Productos</a></li>
-                    <li><a href="#conocenos" className="hover:text-white">Conócenos</a></li>
-                    <li><a href="#contacto" className="hover:text-white">Contacto</a></li>
+                    <li><a href="/" className="hover:text-white">Inicio</a></li>
+                    <li><a href="/products" className="hover:text-white">Productos</a></li>
                 </ul>
 
                 {/* BOTÓN HAMBURGUESA - SOLO APARECE EN PANTALLAS PEQUEÑAS */}
@@ -30,10 +30,8 @@ const Navbar = () => {
 
             {/* MENÚ RESPONSIVO - SOLO SE MUESTRA CUANDO `isOpen` ES `true` */}
             <div className={`md:hidden flex flex-col bg-[#FEBD01] absolute top-16 left-0 w-full p-4 space-y-4 transition-all duration-300 ${isOpen ? "block" : "hidden"}`}>
-                <a href="#home" className="block text-lg hover:text-white">Home</a>
-                <a href="#productos" className="block text-lg hover:text-white">Productos</a>
-                <a href="#conocenos" className="block text-lg hover:text-white">Conócenos</a>
-                <a href="#contacto" className="block text-lg hover:text-white">Contacto</a>
+                <a href="#home" className="block text-lg hover:text-white">Inicio</a>
+                <a href="/products" className="block text-lg hover:text-white">Productos</a>
             </div>
         </nav>
     );
