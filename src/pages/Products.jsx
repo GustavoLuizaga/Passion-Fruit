@@ -9,7 +9,7 @@ const Products = () => {
             <h1 className="text-5xl md:text-5xl font-bold text-left md:px-32 px-5 py-8 ">
                 Jugos Naturales
             </h1>
-            <div className="mt-5 md:px-32 flex justify-center mb-15">
+            <div className="mt-5 md:px-32 flex justify-center mb-15 px-5">
             <Card />
             </div>
             <Footer />
