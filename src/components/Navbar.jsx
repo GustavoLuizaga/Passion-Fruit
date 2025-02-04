@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Iconos de hamburguesa y cerrar
 import Logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false); // Estado para manejar el menú en móviles
@@ -16,7 +17,7 @@ const Navbar = () => {
                 {/* MENÚ - Oculto en pantallas pequeñas */}
                 <ul className="hidden md:flex  px-32 space-x-16 text-lg font-semibold">
                     <li><a href="/" className="hover:text-white">Inicio</a></li>
-                    <li><a href="/products" className="hover:text-white">Productos</a></li>
+                    <li><Link to="/products" className="hover:text-white">Productos</Link></li>
                 </ul>
 
                 {/* BOTÓN HAMBURGUESA - SOLO APARECE EN PANTALLAS PEQUEÑAS */}
@@ -31,7 +32,7 @@ const Navbar = () => {
             {/* MENÚ RESPONSIVO - SOLO SE MUESTRA CUANDO `isOpen` ES `true` */}
             <div className={`md:hidden flex flex-col bg-[#FEBD01] absolute top-16 left-0 w-full p-4 space-y-4 transition-all duration-300 ${isOpen ? "block" : "hidden"}`}>
                 <a href="#home" className="block text-lg hover:text-white">Inicio</a>
-                <a href="/products" className="block text-lg hover:text-white">Productos</a>
+                <Link to="/products" className="block text-lg hover:text-white">Productos</Link>
             </div>
         </nav>
     );

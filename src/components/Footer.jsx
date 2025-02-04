@@ -1,5 +1,6 @@
 import { FaFacebook, FaInstagram, FaTiktok} from "react-icons/fa";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -22,8 +23,8 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold text-white md:px-10">Productos</h3>
           <ul className="mt-2 text-gray-400 space-y-2 md:px-10">
-            <li><a href="/products">Todos los productos</a></li>
-            <li><a href="/products">Jugos naturales</a></li>
+            <li><Link to="/products">Todos los productos</Link></li>
+            <li><Link to="/products">Jugos naturales</Link></li>
           </ul>
         </div>
 
