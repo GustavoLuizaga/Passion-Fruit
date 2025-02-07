@@ -7,7 +7,7 @@ const Card = () => {
             <div className="px-6 py-4">
                 <div className="font-bold text-2xl mb-2">Jugo de Mango </div>
                 <p className="text-gray-700 text-base">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                    Deléitate con el auténtico sabor del mango 100% natural. Nuestro jugo está hecho con pura pulpa, sin conservantes ni aditivos, para brindarte una experiencia refrescante y llena de nutrientes. ¡Pura fruta, puro sabor!.
                 </p>
                 <div className="mt-10 flex justify-between items-center">
                     <p>Tamaño: 600ml</p>

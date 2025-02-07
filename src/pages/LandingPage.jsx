@@ -11,7 +11,7 @@ const LandingPage = () => {
                 {/* Contenedor del contenido (Texto + Imagen) */}
                 <div className="flex flex-col md:flex-row md:justify-between w-full">
                     {/* Contenedor del Texto */}
-                    <div className="max-w-[500px] mt-8">
+                    <div className="max-w-[500px] mt-8 md:mt-18">
                         <h1 className="text-5xl md:text-5xl font-bold text-left">
                             Descubre la Delicia del <span className="text-[#FF9000]">Mango</span>
                         </h1>
