@@ -1,33 +1,41 @@
-import Mango from "../assets/Mango.jpg";
-
-const Card = () => {
+import PropTypes from 'prop-types';
+import { FaWhatsapp } from 'react-icons/fa';
+const Card = ({ image, title, description, size, price, onClick }) => {
     return (
-        <div className="max-w-sm rounded-lg overflow-hidden shadow-lg">
-            <img className="w-full" src={Mango} alt="Sunset in the mountains" />
-            <div className="px-6 py-4">
-                <div className="font-bold text-2xl mb-2">Jugo de Mango </div>
-                <p className="text-gray-700 text-base">
-                    Deléitate con el auténtico sabor del mango 100% natural. Nuestro jugo está hecho con pura pulpa, sin conservantes ni aditivos, para brindarte una experiencia refrescante y llena de nutrientes. ¡Pura fruta, puro sabor!.
+        <div className="max-w-sm h-full flex flex-col justify-between rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+            <img className="w-full" src={image} alt={title} />
+            <div className="px-6 py-4 flex flex-col flex-grow">
+                <div className="font-bold text-2xl mb-2">{title}</div>
+                <p className="text-gray-700 text-base flex-grow">
+                    {description}
                 </p>
-                <div className="mt-10 flex justify-between items-center">
-                    <p>Tamaño: 600ml</p>
-                    <p className="text-right text-2xl font-bold"> <span className="text-[#FF9000]" > Bs 8.00 </span></p>
+                <div className="mt-6 flex justify-between items-center">
+                    <p>Tamaño: {size}</p>
+                    <p className="text-right text-2xl font-bold">
+                        <span className="text-[#FF9000]">Bs {price}</span>
+                    </p>
                 </div>
                 <button
-                    className="w-full bg-[#FEBD01] p-2.5 rounded-xl mt-8 font-semibold cursor-pointer"
-                    onClick={() => window.location.href = "https://www.facebook.com/profile.php?id=61572239407939&rdid=v3BR8n6YIDvfHJIW#"}
+                    className="w-full bg-[#ffb525] p-2.5 rounded-xl mt-6 font-semibold cursor-pointer hover:bg-[#e89e15] transition-colors duration-300 flex items-center justify-center gap-2 text-[#3A1F0F]"
+                    onClick={onClick}
                 >
-                    Obtener
+                    <FaWhatsapp className="text-xl" />
+                    Realizar Pedido
                 </button>
 
             </div>
-            <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#JugosNaturales</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Mango</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Fresco</span>
-            </div>
         </div>
     );
+};
+
+
+Card.propTypes = {
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    size: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    onClick: PropTypes.func.isRequired,
 };
 
 export default Card;

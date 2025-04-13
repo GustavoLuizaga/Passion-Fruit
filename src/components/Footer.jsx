@@ -9,13 +9,13 @@ export default function Footer() {
         
         {/* Sección de Marca */}
         <div>
-          <h2 className="text-xl font-bold text-white">
-            Elixir <span className="text-[#FEBD01]">frutal</span>
+          <h2 className="text-xl font-bold text-[#ffb525]">
+            <span className="text-white">PASSION</span> FRUIT
           </h2>
           <p className="text-gray-400 mt-2">
             Descubre el sabor tropical del mango en su máxima expresión.
           </p>
-          <div className="flex gap-4 mt-4 text-[#FF9000] text-2xl">
+          <div className="flex gap-4 mt-4 text-[#ffb525] text-2xl">
           </div>
         </div>
 
@@ -24,25 +24,27 @@ export default function Footer() {
           <h3 className="font-semibold text-white md:px-10">Productos</h3>
           <ul className="mt-2 text-gray-400 space-y-2 md:px-10">
             <li><Link to="/products">Todos los productos</Link></li>
-            <li><Link to="/products">Jugos naturales</Link></li>
+            <li><Link to="/products">Laminas de maracuyá</Link></li>
+            <li><Link to="/products">Harina de maracuyá</Link></li>
           </ul>
         </div>
 
         {/* Empresa */}
         <div>
           <h3 className="font-semibold text-white">Redes sociales</h3>
-          <div className="flex gap-4 mt-4 text-[#FEBD01] text-2xl">
+          <div className="flex gap-4 mt-4 text-[#ffb525] text-2xl">
             
-            <a href="https://www.facebook.com/profile.php?id=61572239407939&rdid=v3BR8n6YIDvfHJIW#">
+            <a href="">
             <FaFacebook />
             </a>
-            <a href="https://www.instagram.com/jugos_elixir_frutal?igsh=ZDEwMHR0anl3a3lp">
+            <a href="">
             <FaInstagram />
             </a>
 
-            <a href="https://www.tiktok.com/@elixirfrutal2025?_t=zm-8tgeb1iij4f&_r=1">
+            <a href="">
             <FaTiktok />
             </a>
+
             
           </div>
         </div>
@@ -57,11 +59,11 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <FaPhone className="text-[#FEBD01]" />
-              +591 75408059
+              +591 
             </li>
             <li className="flex items-center gap-2">
               <FaEnvelope className="text-[#FEBD01]" />
-              elixirfrutal@gmail.com
+              correo@gmail.com
             </li>
           </ul>
         </div>
