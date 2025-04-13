@@ -1,6 +1,13 @@
 import PropTypes from 'prop-types';
 import { FaWhatsapp } from 'react-icons/fa';
-const Card = ({ image, title, description, size, price, onClick }) => {
+const Card = ({ image, title, description, size, price }) => {
+    const handleOrderClick = () => {
+        const phone = "59168500039"; // tu número con código de país
+        const message = `Hola, quiero hacer un pedido de ${title}`;
+        const encodedMessage = encodeURIComponent(message);
+        const url = `https://wa.me/${phone}?text=${encodedMessage}`;
+        window.open(url, "_blank"); // abre en nueva pestaña
+    };
     return (
         <div className="max-w-sm h-full flex flex-col justify-between rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
             <img className="w-full" src={image} alt={title} />
@@ -17,7 +24,7 @@ const Card = ({ image, title, description, size, price, onClick }) => {
                 </div>
                 <button
                     className="w-full bg-[#ffb525] p-2.5 rounded-xl mt-6 font-semibold cursor-pointer hover:bg-[#e89e15] transition-colors duration-300 flex items-center justify-center gap-2 text-[#3A1F0F]"
-                    onClick={onClick}
+                    onClick={handleOrderClick}
                 >
                     <FaWhatsapp className="text-xl" />
                     Realizar Pedido
