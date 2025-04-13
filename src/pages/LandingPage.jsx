@@ -3,8 +3,11 @@ import Footer from "../components/Footer";
 import Producto from "../assets/Maracuyá.jpg";
 import CardValue from "../components/CardValue";
 import { FaLeaf, FaRecycle, FaHeartbeat, FaUsers } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
 
 const LandingPage = () => {
+    const navigate = useNavigate();
     return (
         <div className="min-h-screen">
             {/* Sección con fondo amarillo */}
@@ -25,7 +28,7 @@ const LandingPage = () => {
                             </p>
                             {/* Botones */}
                             <div className="mt-8 w-full">
-                                <button className="bg-[#2E7D32] text-white font-semibold py-3 px-6 rounded-xl shadow-md hover:bg-[#388E3C] transition-colors duration-300 w-full">
+                                <button className="bg-[#2E7D32] text-white font-semibold py-3 px-6 rounded-xl shadow-md hover:bg-[#388E3C] transition-colors duration-300 w-full" onClick={() => navigate('/products')}>
                                     Ver productos
                                 </button>
 
