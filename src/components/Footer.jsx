@@ -13,7 +13,7 @@ export default function Footer() {
             <span className="text-white">PASSION</span> FRUIT
           </h2>
           <p className="text-gray-400 mt-2">
-            Descubre el sabor tropical del mango en su máxima expresión.
+            Descubre el sabor tropical de la Maracuyá en su máxima expresión.
           </p>
           <div className="flex gap-4 mt-4 text-[#ffb525] text-2xl">
           </div>

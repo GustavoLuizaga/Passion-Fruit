@@ -25,9 +25,11 @@ const LandingPage = () => {
                             </p>
                             {/* Botones */}
                             <div className="mt-8 w-full">
-                                <button className="bg-[#f2d49c] hover:bg-[#dd6a02] text-black px-6 py-3 rounded-lg font-semibold w-full">
+                                <button className="bg-[#2E7D32] text-white font-semibold py-3 px-6 rounded-xl shadow-md hover:bg-[#388E3C] transition-colors duration-300 w-full">
                                     Ver productos
                                 </button>
+
+
                             </div>
 
                         </div>

@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Timeline from "../components/TimeLine";
 import CardInfo from "../components/CardInfo";
 import CardValue from "../components/CardValue";
+import TeamGrid from "../components/Team";
 import { FaLightbulb, FaShieldAlt,FaUsers, FaHeartbeat, FaRecycle, FaLeaf } from "react-icons/fa";
 
 const KnowUs = () => {
@@ -32,7 +33,7 @@ const KnowUs = () => {
                         reconocida por nuestra innovación, calidad y compromiso con la satisfacción del cliente.
                     </CardInfo>
                 </div>
-
+                <TeamGrid/>
                 {/* Nuestros Valores */}
                 <div>
                     <h2 className="text-4xl font-bold mb-6 text-center">Nuestros Valores</h2>
