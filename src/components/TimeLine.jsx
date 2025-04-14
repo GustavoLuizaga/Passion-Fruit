@@ -6,7 +6,7 @@ const events = [
   
   export default function Timeline() {
     return (
-      <div className="py-10 px-4 max-w-4xl mx-auto">
+      <div className="py-4 px-4 max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-4xl font-bold text-center mb-10">Nuestro Camino</h2>
         <p className="text-center text-gray-700 mb-6">
           A continuación, te mostramos los hitos más importantes de nuestra historia.
