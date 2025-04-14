@@ -20,11 +20,12 @@ const LandingPage = () => {
                         {/* Texto a la izquierda */}
                         <div className="lg:w-1/2 text-left">
                             <h1 className="text-5xl md:text-5xl mb-6 font-bold leading-tight text-[#3A1F0F]">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                            SABOR QUE NACE DE LA NATURALEZA
+
                             </h1>
 
                             <p className="mt-6 text-lg md:text-xl text-[#7A4E2D] leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic accusantium numquam dolores vel mollitia, ut nobis minima, laudantium quod vero ex ratione itaque at, ab incidunt maiores deserunt in magnam!
+                            En <spam className ="font-bold">PASSION FRUIT</spam> , transformamos lo mejor de las frutas naturales en productos únicos, saludables y llenos de sabor. Desde láminas de fruta deshidratada hasta harina y aceite de maracuyá, cada creación refleja nuestra pasión por lo auténtico, lo nutritivo y lo delicioso.
                             </p>
                             {/* Botones */}
                             <div className="mt-8 w-full">
@@ -73,15 +74,6 @@ const LandingPage = () => {
                             </CardValue>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section className="bg-[#FFB525]">
-                <div className="max-w-7xl mx-auto px-4 md:px-8 py-8"> {/* antes era py-16 */}
-                    <h2 className="text-3xl font-bold mb-4 text-center text-[#3A1F0F]">¿Quiénes somos?</h2> {/* tamaño de texto reducido */}
-                    <p className="text-base md:text-lg text-[#7A4E2D] leading-relaxed text-center">
-                        Somos una empresa dedicada a la producción y comercialización de productos naturales derivados de la maracuyá, con el objetivo de ofrecer opciones saludables y sostenibles para nuestros clientes.
-                    </p>
                 </div>
             </section>
 
