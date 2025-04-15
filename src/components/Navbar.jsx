@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FiSearch, FiHeart, FiUser, FiShoppingCart, FiPhone } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
-import Logo from "../assets/logo2.png";
+import Logo from "../assets/LOGO MARACUYA 2.jpg";
 
 const links = [
     { label: "INICIO", to: "/" },
@@ -15,11 +15,16 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-0 w-full z-50 bg-white text-black shadow-md py-4">
-            <div className="max-w-7xl mx-auto flex items-center justify-between px-4">
+            <div className="max-w-7xl mx-auto flex items-center justify-between px-8">
                 {/* Izquierda: Logo */}
                 <div className="flex-shrink-0">
                     <NavLink to="/">
-                        <img src={Logo} alt="logo" className="w-24 h-auto" />
+                        <img
+                            src={Logo}
+                            alt="logo"
+                            className="w-16 h-16 rounded-full "
+                        />
+
                     </NavLink>
                 </div>
 
@@ -30,10 +35,9 @@ const Navbar = () => {
                             <NavLink
                                 to={link.to}
                                 className={({ isActive }) =>
-                                    `relative transition-colors duration-300 hover:text-yellow-400 ${
-                                        isActive
-                                            ? "text-yellow-400 after:absolute after:left-0 after:-bottom-6 after:w-full after:h-0.5 after:bg-yellow-400"
-                                            : "text-gray-700"
+                                    `relative transition-colors duration-300 hover:text-yellow-400 ${isActive
+                                        ? "text-yellow-400 after:absolute after:left-0 after:-bottom-6 after:w-full after:h-0.5 after:bg-yellow-400"
+                                        : "text-gray-700"
                                     }`
                                 }
                             >
@@ -77,10 +81,9 @@ const Navbar = () => {
                             to={link.to}
                             onClick={() => setIsOpen(false)} // Cierra el menú al hacer click
                             className={({ isActive }) =>
-                                `block text-sm font-medium px-2 py-1 rounded transition-colors duration-200 ${
-                                    isActive
-                                        ? "text-yellow-700 underline font-semibold"
-                                        : "text-gray-800 hover:text-yellow-700"
+                                `block text-sm font-medium px-2 py-1 rounded transition-colors duration-200 ${isActive
+                                    ? "text-yellow-700 underline font-semibold"
+                                    : "text-gray-800 hover:text-yellow-700"
                                 }`
                             }
                         >
