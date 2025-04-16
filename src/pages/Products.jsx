@@ -15,10 +15,10 @@ const Products = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 py-6">
                     <Card
                         image={Producto}
-                        title="Jugo de Maracuyá"
-                        description="Refrescante jugo natural con el auténtico sabor del maracuyá, perfecto para los días calurosos."
-                        size="500ml"
-                        price="7.00"
+                        title="Láminas de fruta deshidratada sabor maracuyá"
+                        description="Deliciosas láminas de maracuyá 100% natural, sin azúcares añadidos. Perfectas como snack saludable, ricas en vitamina C y antioxidantes. Sabor intenso y textura crujiente."
+                        size="5 uds"
+                        price="20.00"
                         onClick={() => window.location.href = "/comprar/maracuya"}
                     />
                     <Card
