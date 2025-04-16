@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { FiSearch, FiHeart, FiUser, FiShoppingCart, FiPhone } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/LOGO MARACUYA 2.jpg";
 
@@ -49,10 +48,7 @@ const Navbar = () => {
 
                 {/* Íconos para móvil */}
                 <div className="flex items-center space-x-4 md:hidden">
-                    <FiSearch size={20} />
-                    <FiHeart size={20} />
-                    <FiUser size={20} />
-                    <FiShoppingCart size={20} />
+
 
                     {/* Botón hamburguesa */}
                     <button
@@ -65,10 +61,7 @@ const Navbar = () => {
 
                 {/* Íconos para escritorio */}
                 <div className="hidden md:flex items-center space-x-4">
-                    <FiSearch size={20} />
-                    <FiPhone size={20} />
-                    <FiUser size={20} />
-                    <FiShoppingCart size={20} />
+   
                 </div>
             </div>
 
