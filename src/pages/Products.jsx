@@ -23,26 +23,26 @@ const Products = () => {
                     />
                     <Card
                         image={Producto}
-                        title="Jugo Tropical"
-                        description="Mezcla exótica de frutas tropicales con un toque de maracuyá, ideal para cualquier ocasión."
+                        title="Producto 2"
+                        description="Descripcion del producto 2."
                         size="600ml"
-                        price="8.50"
+                        price="-"
                         onClick={() => window.location.href = "/comprar/tropical"}
                     />
                     <Card
                         image={Producto}
-                        title="Jugo Energizante"
-                        description="Disfruta de un boost natural con este jugo de maracuyá enriquecido con vitamina C."
+                        title="Producto 3"
+                        description="Descripcion del producto 3."
                         size="450ml"
-                        price="6.50"
+                        price="-"
                         onClick={() => window.location.href = "/comprar/energizante"}
                     />
                     <Card
                         image={Producto}
-                        title="Jugo Detox"
-                        description="Purifica tu cuerpo con este jugo detox a base de maracuyá, pepino y limón."
+                        title="Producto 4"
+                        description="descripcion del producto 4."
                         size="500ml"
-                        price="9.00"
+                        price="-"
                         onClick={() => window.location.href = "/comprar/detox"}
                     />
                 </div>
