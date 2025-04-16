@@ -34,14 +34,14 @@ export default function Footer() {
           <h3 className="font-semibold text-white">Redes sociales</h3>
           <div className="flex gap-4 mt-4 text-[#ffb525] text-2xl">
             
-            <a href="#">
+            <a href="https://www.facebook.com/share/18f5gHJjuG/?mibextid=wwXIfr">
             <FaFacebook />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/passion_fruit_negocio?igsh=MWlqMDRndHh1dXJpNQ==">
             <FaInstagram />
             </a>
 
-            <a href="#">
+            <a href="https://www.tiktok.com/@passion_fruit_negocio99?_t=ZM-8vZMdcqzbba&_r=1">
             <FaTiktok />
             </a>
 
