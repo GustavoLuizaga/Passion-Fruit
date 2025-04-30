@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FaWhatsapp } from 'react-icons/fa';
 const Card = ({ image, title, description, size, price }) => {
     const handleOrderClick = () => {
-        const phone = "59168500039"; // tu número con código de país
+        const phone = "59169091192"; // tu número con código de país
         const message = `Hola, quiero hacer un pedido de ${title}`;
         const encodedMessage = encodeURIComponent(message);
         const url = `https://wa.me/${phone}?text=${encodedMessage}`;

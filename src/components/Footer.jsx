@@ -63,7 +63,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <FaEnvelope className="text-[#FEBD01]" />
-              correo@gmail.com
+              PassionFruitNegocio@gmail.com
             </li>
           </ul>
         </div>
