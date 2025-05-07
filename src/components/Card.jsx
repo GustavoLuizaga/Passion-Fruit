@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { FaWhatsapp } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 const Card = ({ image, title, description, size, price }) => {
     const handleOrderClick = () => {
         const phone = "59169091192"; // tu número con código de país
@@ -10,7 +11,13 @@ const Card = ({ image, title, description, size, price }) => {
     };
     return (
         <div className="max-w-sm h-full flex flex-col justify-between rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-            <img className="w-full" src={image} alt={title} />
+            <Link to={`/descriptionProduct/${title}`}>
+                <img
+                    className="w-full cursor-pointer hover:opacity-90 transition-opacity"
+                    src={image}
+                    alt={title}
+                />
+            </Link>
             <div className="px-6 py-4 flex flex-col flex-grow">
                 <div className="font-bold text-2xl mb-2">{title}</div>
                 <p className="text-gray-700 text-base flex-grow">

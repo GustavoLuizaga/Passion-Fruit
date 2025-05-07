@@ -25,7 +25,7 @@ const LandingPage = () => {
                             </h1>
 
                             <p className="mt-6 text-lg md:text-xl text-[#7A4E2D] leading-relaxed">
-                            En <spam className ="font-bold">PASSION FRUIT</spam> transformamos lo mejor de las frutas naturales en productos únicos, saludables y llenos de sabor. Desde láminas de fruta deshidratada hasta harina y aceite de maracuyá, cada creación refleja nuestra pasión por lo auténtico, lo nutritivo y lo delicioso.
+                            En <spam className ="font-bold">PASSION FRUIT</spam> transformamos lo mejor de las frutas naturales en productos únicos, saludables y llenos de sabor. Desde láminas de fruta deshidratada, cada creación refleja nuestra pasión por lo auténtico, lo nutritivo y lo delicioso.
                             </p>
                             {/* Botones */}
                             <div className="mt-8 w-full">

@@ -12,7 +12,7 @@ const Products = () => {
                 <h1 className="text-4xl font-bold text-gray-900 mb-8">
                     Todos los productos
                 </h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 py-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 py-6 justify-items-center">
                     <Card
                         image={Producto}
                         title="Láminas de fruta deshidratada sabor maracuyá"
@@ -29,22 +29,7 @@ const Products = () => {
                         price="-"
                         onClick={() => window.location.href = "/comprar/tropical"}
                     />
-                    <Card
-                        image={Producto}
-                        title="Producto 3"
-                        description="Descripcion del producto 3."
-                        size="450ml"
-                        price="-"
-                        onClick={() => window.location.href = "/comprar/energizante"}
-                    />
-                    <Card
-                        image={Producto}
-                        title="Producto 4"
-                        description="descripcion del producto 4."
-                        size="500ml"
-                        price="-"
-                        onClick={() => window.location.href = "/comprar/detox"}
-                    />
+                
                 </div>
             </div>
 
