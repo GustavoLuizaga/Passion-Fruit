@@ -25,7 +25,6 @@ export default function Footer() {
           <ul className="mt-2 text-gray-400 space-y-2 md:px-10">
             <li><Link to="/products">Todos los productos</Link></li>
             <li><Link to="/products">Laminas de maracuyá</Link></li>
-            <li><Link to="/products">Harina de maracuyá</Link></li>
           </ul>
         </div>
 

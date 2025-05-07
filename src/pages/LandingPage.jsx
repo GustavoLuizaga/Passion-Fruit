@@ -20,12 +20,12 @@ const LandingPage = () => {
                         {/* Texto a la izquierda */}
                         <div className="lg:w-1/2 text-left">
                             <h1 className="text-5xl md:text-5xl mb-6 font-bold leading-tight text-[#3A1F0F]">
-                            SABOR QUE NACE DE LA NATURALEZA
+                                SABOR QUE NACE DE LA NATURALEZA
 
                             </h1>
 
                             <p className="mt-6 text-lg md:text-xl text-[#7A4E2D] leading-relaxed">
-                            En <spam className ="font-bold">PASSION FRUIT</spam> transformamos lo mejor de las frutas naturales en productos únicos, saludables y llenos de sabor. Desde láminas de fruta deshidratada, cada creación refleja nuestra pasión por lo auténtico, lo nutritivo y lo delicioso.
+                                En <spam className="font-bold">PASSION FRUIT</spam> transformamos lo mejor de las frutas naturales en productos únicos, saludables y llenos de sabor. Nuestras láminas de fruta deshidratada son solo el comienzo; cada creación refleja nuestra pasión por lo auténtico, lo nutritivo y lo delicioso.
                             </p>
                             {/* Botones */}
                             <div className="mt-8 w-full">
