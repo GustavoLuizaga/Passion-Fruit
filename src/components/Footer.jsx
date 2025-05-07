@@ -58,7 +58,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <FaPhone className="text-[#FEBD01]" />
-              +591 
+              +591 69091192
             </li>
             <li className="flex items-center gap-2">
               <FaEnvelope className="text-[#FEBD01]" />
