@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+
 const Card = ({ image, title, description, size, price }) => {
     const handleOrderClick = () => {
         const phone = "59169091192"; // tu número con código de país
