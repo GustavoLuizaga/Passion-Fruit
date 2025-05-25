@@ -12,13 +12,23 @@ const Card = ({ image, title, description, size, price }) => {
     };
     return (
         <div className="max-w-sm h-full flex flex-col justify-between rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
-            <Link to={`/descriptionProduct/${title}`}>
+            <Link
+                to={`/descriptionProduct/${title}`}
+                state={{
+                    images: [image, image, image], // puedes tener 3 o más
+                    description: "Este es un producto saludable...",
+                    manejoEnvaseCerrado: "Guardar en un lugar fresco y seco.",
+                    manejoEnvaseAbierto: "Mantener refrigerado y consumir en 3 días.",
+                    caracteristicasEnvase: "Envase hermético y reciclable.",
+                }}
+            >
                 <img
                     className="w-full cursor-pointer hover:opacity-90 transition-opacity"
                     src={image}
                     alt={title}
                 />
             </Link>
+
             <div className="px-6 py-4 flex flex-col flex-grow">
                 <div className="font-bold text-2xl mb-2">{title}</div>
                 <p className="text-gray-700 text-base flex-grow">
