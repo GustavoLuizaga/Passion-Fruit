@@ -21,9 +21,9 @@ const Products = () => {
                         size="5 uds"
                         price={20.00}
                         extraData={{
-                            images: ["https://firebasestorage.googleapis.com/v0/b/connectway-867ac.appspot.com/o/Borrame%2FIMG_20250514_133838.jpg?alt=media&token=89b6918e-fe3b-4612-91e1-2445c635561a",
-                                "https://firebasestorage.googleapis.com/v0/b/connectway-867ac.appspot.com/o/Borrame%2FIMG_20250514_134411.jpg?alt=media&token=f8d92a08-d902-496e-b466-5b361da3f4c9",
-                                "https://firebasestorage.googleapis.com/v0/b/connectway-867ac.appspot.com/o/Borrame%2FIMG_20250514_134656.jpg?alt=media&token=b657847a-acdd-436e-b5fc-e76348916be5"
+                            images: ["https://firebasestorage.googleapis.com/v0/b/connectway-867ac.appspot.com/o/Borrame%2FIMG_20250514_133838.jpg?alt=media&token=a6d38cce-18bd-4aad-9de9-f3817a6f980d",
+                                "https://firebasestorage.googleapis.com/v0/b/connectway-867ac.appspot.com/o/Borrame%2FIMG_20250514_134411.jpg?alt=media&token=782563bf-5cf5-4dbd-bcfd-4578831ddc35",
+                                "https://firebasestorage.googleapis.com/v0/b/connectway-867ac.appspot.com/o/Borrame%2FIMG_20250514_134656.jpg?alt=media&token=a5835f5d-4a30-43b3-b762-b00a064d3fa4"
                             ],  // tus imágenes reales
                             manejoEnvaseCerrado: "Guardar en lugar fresco y seco.",
                             manejoEnvaseAbierto: "Consumir en 3 días.",
