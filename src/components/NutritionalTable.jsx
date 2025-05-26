@@ -4,6 +4,7 @@ import { ChevronDown } from 'lucide-react';
 import { GiHerbsBundle, GiChemicalDrop } from 'react-icons/gi';
 import { TbMeatOff } from 'react-icons/tb';
 
+
 const Nutricion = ({ datos }) => {
   const [mostrarContenido, setMostrarContenido] = useState(false);
 
@@ -12,7 +13,7 @@ const Nutricion = ({ datos }) => {
   };
 
   return (
-    <div className="p-6 bg-white rounded-lg">
+    <div className="px-2 bg-white rounded-lg">
       <button
         onClick={toggleContenido}
         className="flex items-center justify-between w-full text-left focus:outline-none"
@@ -27,15 +28,15 @@ const Nutricion = ({ datos }) => {
 
       {mostrarContenido && (
         <div className="overflow-x-auto mt-4 transition-all duration-300 ease-in-out">
-          <h1 className="text-lg font-semibold mb-4 text-center">Por porción de 30g</h1>
+          <h1 className="text-xl font-semibold mb-4 text-center text-amber-400">Por porción de 30g</h1>
 
           <table className="w-full text-sm border-collapse">
             <thead>
               <tr>
-                <th className="px-6 py-3 border-b-2 border-[#FFB525] font-semibold text-gray-800 text-center">
+                <th className="px-6 py-3 border-b-2 border-[#FFB525] font-semibold text-gray-800 text-center text-xl">
                   Nutriente
                 </th>
-                <th className="px-6 py-3 border-b-2 border-[#FFB525] font-semibold text-gray-800 text-center">
+                <th className="px-6 py-3 border-b-2 border-[#FFB525] font-semibold text-gray-800 text-center text-xl">
                   Valor
                 </th>
               </tr>
@@ -50,22 +51,29 @@ const Nutricion = ({ datos }) => {
             </tbody>
           </table>
 
-          <div className="flex justify-between items-center w-full max-w-4xl mx-auto mt-16 gap-4 flex-wrap">
+          <div className="flex justify-between items-center w-full max-w-4xl mx-auto mt-16 gap-6 flex-wrap">
             <div className="flex flex-col items-center">
-              <GiHerbsBundle className="text-4xl text-[#FFB525]" />
-              <span className="text-sm font-bold mt-2 text-center">Sin Conservantes</span>
+              <div className="w-20 h-20 rounded-full bg-[#f3bf55] flex items-center justify-center ">
+                <GiHerbsBundle className="text-3xl text-white" />
+              </div>
+              <h4 className="text-lg font-semibold mb-2">Sin Conservantes </h4>
             </div>
 
             <div className="flex flex-col items-center">
-              <GiChemicalDrop className="text-4xl text-[#FFB525]" />
-              <span className="text-sm font-bold mt-2 text-center">Sin Colorantes</span>
+              <div className="w-20 h-20 rounded-full bg-[#f3bf55]  flex items-center justify-center ">
+                <GiChemicalDrop className="text-3xl text-white" />
+              </div>
+              <h4 className="text-lg font-semibold mb-2">Sin Quimicos </h4>
             </div>
 
             <div className="flex flex-col items-center">
-              <TbMeatOff className="text-4xl text-[#FFB525]" />
-              <span className="text-sm font-bold mt-2 text-center">Sin Gelatina</span>
+              <div className="w-20 h-20 rounded-full bg-[#f3bf55]  flex items-center justify-center ">
+                <TbMeatOff className="text-3xl text-white" />
+              </div>
+              <h4 className="text-lg font-semibold mb-2">Sin Gelatina </h4>
             </div>
           </div>
+
         </div>
       )}
     </div>

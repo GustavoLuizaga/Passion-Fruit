@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const Card = ({ image, title, description, size, price }) => {
+const Card = ({ image, title, description, size, price, extraData }) => {
     const handleOrderClick = () => {
         const phone = "59169091192"; // tu número con código de país
         const message = `Hola, quiero hacer un pedido de ${title}`;
@@ -15,19 +15,21 @@ const Card = ({ image, title, description, size, price }) => {
             <Link
                 to={`/descriptionProduct/${title}`}
                 state={{
-                    images: [image, image, image], // puedes tener 3 o más
-                    description: "Este es un producto saludable...",
-                    manejoEnvaseCerrado: "Guardar en un lugar fresco y seco.",
-                    manejoEnvaseAbierto: "Mantener refrigerado y consumir en 3 días.",
-                    caracteristicasEnvase: "Envase hermético y reciclable.",
+                    images: extraData.images,
+                    description,
+                    manejoEnvaseCerrado: extraData.manejoEnvaseCerrado,
+                    manejoEnvaseAbierto: extraData.manejoEnvaseAbierto,
+                    caracteristicasEnvase: extraData.caracteristicasEnvase
                 }}
             >
                 <img
-                    className="w-full cursor-pointer hover:opacity-90 transition-opacity"
+                    className="w-full h-[250px] object-cover cursor-pointer hover:opacity-90 transition-opacity"
                     src={image}
                     alt={title}
                 />
+
             </Link>
+
 
             <div className="px-6 py-4 flex flex-col flex-grow">
                 <div className="font-bold text-2xl mb-2">{title}</div>
@@ -60,7 +62,13 @@ Card.propTypes = {
     description: PropTypes.string.isRequired,
     size: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
-    onClick: PropTypes.func.isRequired,
+    extraData: PropTypes.shape({
+        images: PropTypes.arrayOf(PropTypes.string).isRequired,
+        manejoEnvaseCerrado: PropTypes.string.isRequired,
+        manejoEnvaseAbierto: PropTypes.string.isRequired,
+        caracteristicasEnvase: PropTypes.string.isRequired,
+    }).isRequired,
 };
+
 
 export default Card;

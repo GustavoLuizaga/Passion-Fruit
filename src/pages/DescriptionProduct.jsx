@@ -16,10 +16,8 @@ const DescriptionProduct = () => {
         manejoEnvaseCerrado = "No especificado.",
         manejoEnvaseAbierto = "No especificado.",
         caracteristicasEnvase = ""
-
     } = location.state || {};
 
-    // Estado para el modal de imagen
     const [selectedImage, setSelectedImage] = useState(null);
 
     const openModal = (img) => {
@@ -33,9 +31,11 @@ const DescriptionProduct = () => {
     return (
         <div className="min-h-screen flex flex-col relative">
             <Navbar />
-            <main className="flex-1">
+
+            {/* Primer main: hasta características del envase */}
+            <main className="flex-1 bg-[#FFB525]">
                 <div className="max-w-7xl mx-auto px-8 md:px-8 py-32">
-                    <h1 className="text-4xl text-center font-bold text-[#FFB525] mb-8">
+                    <h1 className="text-4xl text-center font-bold text-[#3A1F0F] mb-8">
                         {title}
                     </h1>
 
@@ -46,7 +46,7 @@ const DescriptionProduct = () => {
                                 key={index}
                                 src={img}
                                 alt={`Imagen ${index + 1}`}
-                                className="w-full rounded-lg shadow-md cursor-zoom-in hover:scale-105 transition-transform"
+                                className="w-full h-full object-cover rounded-lg shadow-md cursor-zoom-in hover:scale-105 transition-transform"
                                 onClick={() => openModal(img)}
                             />
                         ))}
@@ -56,33 +56,31 @@ const DescriptionProduct = () => {
                     <h1 className="text-3xl font-bold text-gray-900 mb-8 mt-10">
                         Descripción del Producto
                     </h1>
-                    <p className="mt-10 text-gray-700 text-lg leading-relaxed">
-                        {description}
-                    </p>
+                    <p>{description}</p>
 
-
+                    {/* Características del envase */}
                     <h1 className="text-3xl font-bold text-gray-900 mb-8 mt-10">
                         Características del envase
                     </h1>
-                    <p>
-                        {caracteristicasEnvase}
-                    </p>
+                    <p>{caracteristicasEnvase}</p>
+                </div>
+            </main>
 
-
+            {/* Segundo main: desde manejo del producto */}
+            <main className="flex-1">
+                <div className="max-w-7xl mx-auto px-8 md:px-8 py-4">
                     {/* Manejo del producto */}
-                    <div className="">
-                        <h1 className="text-3xl font-bold text-gray-900 mb-8 mt-10">
-                            Manejo del producto
-                        </h1>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 py-6">
-                            <CardValue title="Envase Abierto" icon={<TbBottleOff className="text-3xl text-[#FFB525]" />} >
-                                {manejoEnvaseAbierto}
-                            </CardValue>
+                    <h1 className="text-3xl font-bold text-gray-900 mb-8 mt-10">
+                        Manejo del producto
+                    </h1>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 py-6">
+                        <CardValue title="Envase Abierto" icon={<TbBottleOff className="text-3xl text-[#FFB525]" />}>
+                            {manejoEnvaseAbierto}
+                        </CardValue>
 
-                            <CardValue title="Envase Cerrado" icon={<TbBottle className="text-3xl text-[#FFB525]" />} >
-                                {manejoEnvaseCerrado}
-                            </CardValue>
-                        </div>
+                        <CardValue title="Envase Cerrado" icon={<TbBottle className="text-3xl text-[#FFB525]" />}>
+                            {manejoEnvaseCerrado}
+                        </CardValue>
                     </div>
 
                     {/* Tabla nutricional */}
@@ -105,11 +103,9 @@ const DescriptionProduct = () => {
                             vitaminaC: "18.70 mg",
                         }} />
                     </div>
-
-                    {/* Iconos informativos */}
-
                 </div>
             </main>
+
             <Footer />
 
             {/* Modal de imagen ampliada */}

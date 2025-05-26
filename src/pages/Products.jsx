@@ -1,7 +1,8 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Card from "../components/Card";
-import Producto from "../assets/Maracuyá.jpg";
+import Producto1 from "../assets/p1.jpg";
+import Producto2 from "../assets/p2.jpg";
 
 const Products = () => {
     return (
@@ -14,22 +15,39 @@ const Products = () => {
                 </h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 py-6 justify-items-center">
                     <Card
-                        image={Producto}
+                        image={Producto1}
                         title="Láminas de fruta deshidratada sabor maracuyá"
                         description="Deliciosas láminas de maracuyá 100% natural, sin azúcares añadidos. Perfectas como snack saludable, ricas en vitamina C y antioxidantes. Sabor intenso y textura crujiente."
                         size="5 uds"
-                        price="20.00"
-                        onClick={() => window.location.href = "/comprar/maracuya"}
+                        price={20.00}
+                        extraData={{
+                            images: ["https://firebasestorage.googleapis.com/v0/b/connectway-867ac.appspot.com/o/Borrame%2FIMG_20250514_133838.jpg?alt=media&token=89b6918e-fe3b-4612-91e1-2445c635561a",
+                                "https://firebasestorage.googleapis.com/v0/b/connectway-867ac.appspot.com/o/Borrame%2FIMG_20250514_134411.jpg?alt=media&token=f8d92a08-d902-496e-b466-5b361da3f4c9",
+                                "https://firebasestorage.googleapis.com/v0/b/connectway-867ac.appspot.com/o/Borrame%2FIMG_20250514_134656.jpg?alt=media&token=b657847a-acdd-436e-b5fc-e76348916be5"
+                            ],  // tus imágenes reales
+                            manejoEnvaseCerrado: "Guardar en lugar fresco y seco.",
+                            manejoEnvaseAbierto: "Consumir en 3 días.",
+                            caracteristicasEnvase: "Envase reciclable y hermético."
+                        }}
                     />
+
                     <Card
-                        image={Producto}
-                        title="Producto 2"
-                        description="Descripcion del producto 2."
-                        size="600ml"
-                        price="-"
-                        onClick={() => window.location.href = "/comprar/tropical"}
+                        image={Producto2}
+                        title="Láminas de fruta deshidratada sabor maracuyá"
+                        description="Deliciosas láminas de maracuyá 100% natural, sin azúcares añadidos. Perfectas como snack saludable, ricas en vitamina C y antioxidantes. Sabor intenso y textura crujiente."
+                        size="-"
+                        price={0.00}
+                        extraData={{
+                            images: ["https://firebasestorage.googleapis.com/v0/b/connectway-867ac.appspot.com/o/borrame%202%2FIMG_20250514_143128.jpg?alt=media&token=3085bed0-414b-4778-90f5-49cd80665f27",
+                                "https://firebasestorage.googleapis.com/v0/b/connectway-867ac.appspot.com/o/borrame%202%2FIMG_20250514_143116.jpg?alt=media&token=bdda2b25-d99d-4647-b58e-e960c6ec053e",
+                                "https://firebasestorage.googleapis.com/v0/b/connectway-867ac.appspot.com/o/borrame%202%2FIMG_20250514_134712.jpg?alt=media&token=4af256c4-28d7-4d88-a2bd-0775793c5564"],
+                            manejoEnvaseCerrado: "Almacenar en lugar seco.",
+                            manejoEnvaseAbierto: "Refrigerar después de abrir.",
+                            caracteristicasEnvase: "Bolsa resellable."
+                        }}
                     />
-                
+
+
                 </div>
             </div>
 
