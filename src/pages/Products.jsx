@@ -18,7 +18,7 @@ const Products = () => {
                         image={Producto1}
                         title="Láminas de fruta deshidratada sabor maracuyá"
                         description="Deliciosas láminas de maracuyá 100% natural, sin azúcares añadidos. Perfectas como snack saludable, ricas en vitamina C y antioxidantes. Sabor intenso y textura crujiente."
-                        size="5 uds"
+                        size="9 uds"
                         price={20.00}
                         extraData={{
                             images: ["https://firebasestorage.googleapis.com/v0/b/connectway-867ac.appspot.com/o/Borrame%2FIMG_20250514_133838.jpg?alt=media&token=a6d38cce-18bd-4aad-9de9-f3817a6f980d",
@@ -35,8 +35,8 @@ const Products = () => {
                         image={Producto2}
                         title="Láminas de fruta deshidratada sabor maracuyá"
                         description="Deliciosas láminas de maracuyá 100% natural, sin azúcares añadidos. Perfectas como snack saludable, ricas en vitamina C y antioxidantes. Sabor intenso y textura crujiente."
-                        size="-"
-                        price={0.00}
+                        size="3 uds"
+                        price={7.00}
                         extraData={{
                             images: ["https://firebasestorage.googleapis.com/v0/b/connectway-867ac.appspot.com/o/borrame%202%2FIMG_20250514_143128.jpg?alt=media&token=3085bed0-414b-4778-90f5-49cd80665f27",
                                 "https://firebasestorage.googleapis.com/v0/b/connectway-867ac.appspot.com/o/borrame%202%2FIMG_20250514_143116.jpg?alt=media&token=bdda2b25-d99d-4647-b58e-e960c6ec053e",
