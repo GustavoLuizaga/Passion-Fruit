@@ -20,7 +20,7 @@ const LandingPage = () => {
                         {/* Texto a la izquierda */}
                         <div className="lg:w-1/2 text-left">
                             <h1 className="text-5xl md:text-5xl mb-6 font-bold leading-tight text-[#3A1F0F]">
-                                SABOR QUE NACE DE LA NATURALEZA
+                                SABOR QUE NACE DE LA NATURALEZA FABRICIO
 
                             </h1>
 
