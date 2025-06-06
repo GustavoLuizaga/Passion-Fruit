@@ -10,6 +10,7 @@ const Card = ({ image, title, description, size, price, extraData }) => {
         const url = `https://wa.me/${phone}?text=${encodedMessage}`;
         window.open(url, "_blank"); // abre en nueva pestaña
     };
+    
     return (
         <div className="max-w-sm h-full flex flex-col justify-between rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl">
             <Link

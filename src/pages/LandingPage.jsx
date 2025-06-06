@@ -27,7 +27,6 @@ const LandingPage = () => {
                             <p className="mt-6 text-lg md:text-xl text-[#7A4E2D] leading-relaxed">
                                 En <span className="font-bold">PASSION FRUIT</span> transformamos lo mejor de las frutas naturales en productos únicos, saludables y llenos de sabor. Nuestras láminas de fruta deshidratada son solo el comienzo; cada creación refleja nuestra pasión por lo auténtico, lo nutritivo y lo delicioso.
                             </p>
-                            {/* Botones */}
                             <div className="mt-8 w-full">
                                 <button className="bg-[#2E7D32] text-white font-semibold py-3 px-6 rounded-xl shadow-md hover:bg-[#388E3C] transition-colors duration-300 w-full" onClick={() => navigate('/products')}>
                                     Ver productos
@@ -38,7 +37,6 @@ const LandingPage = () => {
 
                         </div>
 
-                        {/* Imagen alineada con el botón */}
                         <div className="lg:w-1/2 w-full flex">
                             <img
                                 src={Producto}
